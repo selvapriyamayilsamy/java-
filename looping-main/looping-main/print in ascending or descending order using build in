@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main {
+    public static void main (String[]args)
+    {
+        Scanner s = new Scanner (System.in);
+        int n1 = s.nextInt();
+        int n2 = s.nextInt();
+        int n3 = s.nextInt();
+        int max = Math.max(Math.max(n1,n2),n3);
+        int min = Math.min(Math.min(n1,n2),n3);
+        int mid =((n1 + n2 + n3)-(min +max));
+        System.out.println(max + " " + mid + " " + min);
+        }
+    }
